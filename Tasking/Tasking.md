@@ -1,23 +1,23 @@
-# 输入信息处理
+# 1输入信息处理
 输入：Items ["ITEM0001 x 1", "ITEM0013 x 2", "ITEM0022 x 1"]
 输出：ItemList[{'ITEM0001', 2},...]
-# 生成详细清单
-输入：ItemList[{'ITEM0001', 2},...]
+# 2生成详细清单
+输入：ItemList[{'ITEM0001', 2},...]，loadAllItems
 输出：superItemList[{'ITEM0001', 2,'黄焖鸡',6.00},...]
-# 计算原价
-输入：输出：superItemList，loadAllItems
+# 3计算原价
+输入：输出：superItemList
 输出：Charge1:25
 
-# 1 计算使用优惠1的折扣（满30-6元）
+# 4计算使用优惠1的折扣（满30-6元）
 输入：ItemsList，loadAllItems
 输出：节省6元
-# 2 计算使用优惠2的折扣（凉皮黄焖鸡半价）
+# 5计算使用优惠2的折扣（凉皮黄焖鸡半价）
 输入：ItemsList，loadAllItems
 输出：节省8元
-# 3 确定最佳优惠方案
+# 6确定最佳优惠方案
 输入：费用1，费用2
 输出：0/1/2
-# 4输出汇总信息
+# 7输出汇总信息
 输入：优惠方案0/1/2，ItemList[{'ITEM0001', 2},...]，loadAllItems
 输出：string
 ============= 订餐明细 =============
